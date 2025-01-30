@@ -136,8 +136,8 @@ if port_mode == False:  # All ports.
         if port == 65534:
             port = 1
 
-            elif port == 1900:
-                port = 1901
+        elif port == 1900:
+            port = 1901
 
             sock.sendto(bytes, (ip, port))
             sent += 1
